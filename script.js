@@ -40,7 +40,7 @@ function playcomposition(songArray){
 
     for (let songItem of songArray){//vai percorrer cada digitado do songArray
         setTimeout(() => { //para demorar 0,25s a cada loop
-            playSound(`key${songItem}`)//vai tocar o que executou
+            playSound(`key${songItem.toLowerCase()}`)//vai tocar o que executou
         }, wait);
 
         wait += 250;
